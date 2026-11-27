@@ -107,7 +107,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .block h3{text-wrap:balance;font-size:15px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
 .block.free h3{color:var(--orange-deep)}
 .map-row{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin-top:64px}
-.map-row img{width:100%;border:2px solid var(--ink)}
+.plan-wrap{overflow-x:auto}
+.plan{width:100%;min-width:760px;height:auto;display:block;border:2px solid var(--ink)}
+.plan text{font-family:var(--body);font-size:28px;fill:var(--stone);paint-order:stroke;stroke:var(--mint);stroke-width:9px;stroke-linejoin:round}
+.plan .b{font-weight:700;fill:var(--ink)}
+.plan .pl-lab{font-weight:700;font-size:26px;fill:var(--ink);text-transform:uppercase;letter-spacing:.05em}
+.plan .pl-river{font-family:var(--script);font-size:70px;fill:var(--ink)}
+.plan .pl-pin text{font-weight:800;font-size:32px;fill:#fff;text-anchor:middle;stroke:none}
 .map-row .lede{max-width:70ch}
 .map-row .script{font-size:clamp(44px,5.5vw,80px)}
 @media (max-width:960px){.blocks{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -343,7 +349,57 @@ footer img{height:26px;width:auto}
       <div class="block rv"><h3>[&nbsp;En salle&nbsp;]</h3><p>Le Rez / Le Zoo à L’Usine le vendredi et le Palladium le samedi, jusqu’à 6h : têtes d’affiche, DJ et showcases. Le dimanche, jam session au Groove. À prix accessibles.</p></div>
     </div>
     <div class="map-row rv">
-      <img src="images/plan-festival.jpg" alt="Plan du festival sur les berges du Rhône, du pont de Sous-Terre au pont de la Coulouvrenière : parcours, scènes et zones numérotées" loading="lazy">
+      <div class="plan-wrap">
+      <svg class="plan" viewBox="0 0 2000 1000" role="img" aria-label="Plan simplifié du festival : boucle piétonne d’environ 1.7 km sur les deux rives du Rhône, du pont de Sous-Terre au pont de la Coulouvrenière, avec les zones numérotées">
+        <defs>
+          <pattern id="pl-hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="14" stroke="#f4431c" stroke-width="2.4"/>
+          </pattern>
+        </defs>
+        <rect width="2000" height="1000" fill="#e8eee3"/>
+        <g fill="none" stroke="#cfd5ca" stroke-width="16" stroke-linecap="round">
+          <path d="M0 440 C 220 360, 420 260, 560 170 S 760 30, 820 0"/>
+          <path d="M1965 0 L1965 1000"/>
+          <path d="M1060 660 L1965 610"/>
+          <path d="M1250 660 L1250 1000"/>
+          <path d="M700 1000 L900 780"/>
+        </g>
+        <g fill="url(#pl-hatch)" stroke="#f4431c" stroke-width="4" stroke-linejoin="round">
+          <path d="M0 720 L125 690 L300 640 L480 560 L640 470 L760 390 L850 300 L910 230 L980 165 L1080 105 L1220 72 L1420 62 L1650 78 L1890 98 L1890 228 L1560 232 L1150 300 L1150 440 L1000 460 L940 470 L900 540 L800 600 L700 640 L560 700 L420 770 L260 850 L120 880 L0 905 Z"/>
+          <path d="M1260 318 L1660 306 L1890 300 L1890 440 L1680 440 L1270 446 Z"/>
+        </g>
+        <path d="M1150 300 L1550 238 L1556 440 L1160 458 Z" fill="#cfd5ca"/>
+        <g stroke="#0e0e0e" stroke-width="22">
+          <line x1="160" y1="660" x2="70" y2="895"/>
+          <line x1="1905" y1="80" x2="1910" y2="460"/>
+        </g>
+        <g fill="none" stroke="#0e0e0e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 16">
+          <path d="M75 888 L165 662 L300 672 L450 585 L620 485 L760 380 L840 285 L930 185 L1050 105 L1220 55 L1500 58 L1885 100 L1915 110 L1915 295 L1665 298 L1665 440 L1265 448 L1215 495 L1180 495 L1150 465 L985 465 L955 480 L975 575 L1020 585 L900 600 L730 640 L520 745 L260 870 L75 888"/>
+          <path d="M835 300 L905 420 L945 470"/>
+        </g>
+        <text class="pl-river" x="1260" y="190" transform="rotate(-6 1260 190)">le Rhône</text>
+        <g class="pl-txt">
+          <text class="pl-lab" x="1350" y="385" text-anchor="middle">BFM</text>
+          <text class="pl-lab" x="24" y="500">Pont de</text><text class="pl-lab" x="24" y="536">Sous-Terre</text>
+          <text class="pl-lab" x="1880" y="510" text-anchor="end">Pont de la</text><text class="pl-lab" x="1880" y="546" text-anchor="end">Coulouvrenière</text>
+          <text x="1300" y="36" text-anchor="end"><tspan class="b">Parcours</tspan> · 1.7 km en boucle</text>
+          <text x="100" y="598"><tspan class="b">Esplanade</tspan></text><text x="100" y="634">scène plein air</text>
+          <text x="520" y="455" text-anchor="end"><tspan class="b">Quai du Seujet</tspan></text><text x="520" y="491" text-anchor="end">food trucks · bars</text>
+          <text x="945" y="370"><tspan class="b">Scène hip-hop</tspan></text><text x="945" y="406">barrage du Seujet</text>
+          <text x="1060" y="555"><tspan class="b">L’Usine · Volontaires</tspan></text><text x="1060" y="591">marché, DJ · Le Rez / Le Zoo</text>
+          <text x="650" y="790"><tspan class="b">Palladium · Buvette Urban</tspan></text><text x="650" y="826">salle · zone jeunes</text>
+          <text x="120" y="966"><tspan class="b">Le Groove</tspan> · à quelques minutes à pied, vers la Jonction</text>
+        </g>
+        <g class="pl-pin">
+          <circle cx="1350" cy="58" r="30" fill="#0e0e0e"/><text x="1350" y="69">1</text>
+          <circle cx="230" cy="668" r="34" fill="#f4431c"/><text x="230" y="680">2</text>
+          <circle cx="560" cy="525" r="30" fill="#0e0e0e"/><text x="560" y="536">3</text>
+          <circle cx="890" cy="405" r="34" fill="#f4431c"/><text x="890" y="417">4</text>
+          <circle cx="610" cy="690" r="30" fill="#0e0e0e"/><text x="610" y="701">5</text>
+          <circle cx="75" cy="955" r="30" fill="#0e0e0e"/><text x="75" y="966">6</text>
+        </g>
+      </svg>
+      </div>
       <div>
         <p class="script">une fête populaire au bord de l’eau</p>
         <p class="lede" style="margin-top:16px">Du pont de Sous-Terre au pont de la Coulouvrenière, sur les deux rives, le festival se vit à pied, d’une scène à l’autre, en longeant l’eau, sur des quais fermés à la circulation. Le Groove, à quelques minutes à pied, accueille la jam session du dimanche.</p>
