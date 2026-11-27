@@ -1,5 +1,5 @@
 <!doctype html><html lang="fr"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>LA MATRICE Genève 2027</title>
+<title>LA MATRICE Festival Genève 2027 · by Planète Rouge</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="LA MATRICE, le festival né à Lausanne, arrive à Genève en 2027 : du 27 au 29 août 2027, trois jours de fête populaire au bord du Rhône, portés par Planète Rouge.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,6 +56,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .hero h1 .line span{display:block;animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
 .hero h1 .line:nth-child(2) span{animation-delay:.12s}
 .hero h1 .line:nth-child(3) span{animation-delay:.24s}
+.hero .by{font-family:var(--display);text-transform:uppercase;font-size:clamp(22px,2.6vw,34px);letter-spacing:.02em;margin-top:14px;animation:fadeUp 1s .4s both}
 .hero .script{font-size:clamp(40px,5.4vw,76px);color:var(--mint);margin-top:10px;animation:fadeUp 1s .5s both}
 .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;animation:fadeUp 1s .7s both}
 .chip{border:2px solid var(--ink);padding:6px 12px;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.04em}
@@ -105,8 +106,9 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .block{border-top:2px solid var(--ink);padding-top:14px}
 .block h3{text-wrap:balance;font-size:15px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
 .block.free h3{color:var(--orange-deep)}
-.map-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center;margin-top:64px}
-.map-row img{width:100%;border:2px solid var(--ink);filter:grayscale(.2)}
+.map-row{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin-top:64px}
+.map-row img{width:100%;border:2px solid var(--ink)}
+.map-row .lede{max-width:70ch}
 .map-row .script{font-size:clamp(44px,5.5vw,80px)}
 @media (max-width:960px){.blocks{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.blocks{grid-template-columns:minmax(0,1fr)}.map-row{grid-template-columns:minmax(0,1fr)}}
@@ -284,11 +286,12 @@ footer img{height:26px;width:auto}
     <div>
       <p class="label">[ Genève · 27–29 août 2027 · 5e édition ]</p>
       <h1 style="margin-top:18px"><span class="line"><span>LA MATRICE</span></span><span class="line"><span>Festival</span></span><span class="line"><span>Genève</span></span></h1>
+      <p class="by">by Planète Rouge</p>
       <p class="script">le festival au bord du Rhône</p>
       <div class="meta">
         <span class="chip solid">3 jours</span>
         <span class="chip">6 zones</span>
-        <span class="chip">3 scènes gratuites</span>
+        <span class="chip">2 scènes gratuites</span>
         <span class="chip">De Lausanne à Genève</span>
       </div>
       <div class="support">
@@ -309,8 +312,8 @@ footer img{height:26px;width:auto}
 
 <div class="marquee" aria-hidden="true">
   <div class="track">
-    <span>Concerts<i>✶</i>Showcases<i>✶</i>DJ sets<i>✶</i>Jam session<i>✶</i>Humour &amp; danse<i>✶</i>Tournoi de foot<i>✶</i>Marché des créateurs<i>✶</i>Food trucks au bord de l’eau<i>✶</i></span>
-    <span>Concerts<i>✶</i>Showcases<i>✶</i>DJ sets<i>✶</i>Jam session<i>✶</i>Humour &amp; danse<i>✶</i>Tournoi de foot<i>✶</i>Marché des créateurs<i>✶</i>Food trucks au bord de l’eau<i>✶</i></span>
+    <span>Concerts<i>✶</i>Showcases<i>✶</i>DJ sets<i>✶</i>Jam session<i>✶</i>Marché des créateurs<i>✶</i>Zone jeunes<i>✶</i>Food trucks au bord de l’eau<i>✶</i></span>
+    <span>Concerts<i>✶</i>Showcases<i>✶</i>DJ sets<i>✶</i>Jam session<i>✶</i>Marché des créateurs<i>✶</i>Zone jeunes<i>✶</i>Food trucks au bord de l’eau<i>✶</i></span>
   </div>
 </div>
 
@@ -319,31 +322,31 @@ footer img{height:26px;width:auto}
     <div class="rv">
       <p class="label">[ Le festival ]</p>
       <h2 class="h2" style="margin-top:12px">Six zones, un seul fil</h2>
-      <p class="lede" style="margin-top:20px">Du 27 au 29 août 2027, LA MATRICE transforme les berges du Rhône en un parcours festif : une voie piétonne de 1.5 km, de la Pointe de la Jonction au pont de la Coulouvrenière, qui relie trois scènes gratuites en plein air et trois salles emblématiques de Genève.</p>
+      <p class="lede" style="margin-top:20px">Du 27 au 29 août 2027, LA MATRICE transforme les berges du Rhône en un parcours festif : une boucle piétonne d’environ 1.7 km sur les deux rives, du pont de Sous-Terre au pont de la Coulouvrenière, qui relie deux scènes gratuites en plein air et trois salles emblématiques de Genève.</p>
     </div>
-    <div class="route" id="route" role="img" aria-label="Schéma du parcours le long du Rhône : Halles de la Jonction, Palladium, Le Groove, Barrage du Seujet et Place des Volontaires, L’Usine, Scène de la Coulouvrenière">
+    <div class="route" id="route" role="img" aria-label="Schéma du parcours le long du Rhône : Scène de l’Esplanade, Barrage du Seujet, Place des Volontaires, L’Usine, Palladium et Buvette Urban, Le Groove">
       <svg viewBox="0 0 1200 420" aria-hidden="true">
         <path class="river" d="M40 220 C 140 220, 160 120, 260 120 C 370 120, 380 260, 480 260 C 590 260, 600 140, 700 140 C 810 140, 820 280, 920 280 C 1030 280, 1040 150, 1160 150"/>
-        <g class="stop"><circle cx="40" cy="220" r="20" fill="#f4431c"/><text x="12" y="290">Halles de la Jonction</text><text class="sub" x="12" y="314">Plein air · soul, R&amp;B · gratuit</text></g>
-        <g class="stop"><circle cx="260" cy="120" r="20" fill="#0e0e0e"/><text x="214" y="72">Palladium</text><text class="sub" x="214" y="94">Salle · jusqu’à 6h</text></g>
-        <g class="stop"><circle cx="480" cy="260" r="20" fill="#0e0e0e"/><text x="430" y="326">Le Groove</text><text class="sub" x="430" y="350">Salle · jam session</text></g>
-        <g class="stop"><circle cx="700" cy="140" r="20" fill="#f4431c"/><text x="590" y="68">Seujet · Volontaires</text><text class="sub" x="590" y="92">Marché · humour &amp; danse · gratuit</text></g>
-        <g class="stop"><circle cx="920" cy="280" r="20" fill="#0e0e0e"/><text x="840" y="346">L’Usine</text><text class="sub" x="840" y="370">Le Rez / Le Zoo · jusqu’à 6h</text></g>
-        <g class="stop"><circle cx="1160" cy="150" r="20" fill="#f4431c"/><text x="1188" y="76" text-anchor="end">Coulouvrenière</text><text class="sub" x="1188" y="100" text-anchor="end">Plein air · hip-hop · gratuit</text></g>
+        <g class="stop"><circle cx="40" cy="220" r="20" fill="#f4431c"/><text x="12" y="290">Esplanade</text><text class="sub" x="12" y="314">Plein air · scène · gratuit</text></g>
+        <g class="stop"><circle cx="260" cy="120" r="20" fill="#f4431c"/><text x="214" y="72">Barrage du Seujet</text><text class="sub" x="214" y="94">Plein air · hip-hop · gratuit</text></g>
+        <g class="stop"><circle cx="480" cy="260" r="20" fill="#f4431c"/><text x="430" y="326">Volontaires</text><text class="sub" x="430" y="350">Marché des créateurs · DJ · gratuit</text></g>
+        <g class="stop"><circle cx="700" cy="140" r="20" fill="#0e0e0e"/><text x="650" y="68">L’Usine</text><text class="sub" x="650" y="92">Le Rez / Le Zoo · jusqu’à 6h</text></g>
+        <g class="stop"><circle cx="920" cy="280" r="20" fill="#0e0e0e"/><text x="840" y="346">Palladium</text><text class="sub" x="840" y="370">Salle · jusqu’à 6h · zone jeunes</text></g>
+        <g class="stop"><circle cx="1160" cy="150" r="20" fill="#0e0e0e"/><text x="1188" y="76" text-anchor="end">Le Groove</text><text class="sub" x="1188" y="100" text-anchor="end">Salle · jam session</text></g>
       </svg>
     </div>
     <p class="muted" style="font-size:14px;margin-top:8px">Schéma non à l’échelle · <b style="color:var(--orange)">orange</b> : plein air gratuit · <b style="color:var(--ink)">noir</b> : salles payantes.</p>
     <div class="blocks">
-      <div class="block rv"><h3>[&nbsp;Le concept&nbsp;]</h3><p>Une voie principale de 1.5 km le long du Rhône, entièrement piétonne, qui relie les six zones du festival.</p></div>
-      <div class="block rv"><h3>[&nbsp;La voie principale&nbsp;]</h3><p>Food trucks et stands tout le long du quai, le marché des créateurs sur le Barrage du Seujet et un bar face au Rhône devant L’Usine, en accès libre.</p></div>
-      <div class="block free rv"><h3>[&nbsp;En plein air · gratuit&nbsp;]</h3><p>Trois scènes : soul et R&amp;B aux Halles de la Jonction, hip-hop rue de la Coulouvrenière, humour et danse place des Volontaires. Et en journée, un tournoi de foot à l’Asphalte et une zone jeux pour les jeunes à la Buvette Urban.</p></div>
-      <div class="block rv"><h3>[&nbsp;En salle&nbsp;]</h3><p>Le Rez / Le Zoo à L’Usine, le Palladium et Le Groove : têtes d’affiche, DJ, showcases et jam session, à prix accessibles, jusqu’à 6h du matin.</p></div>
+      <div class="block rv"><h3>[&nbsp;Le concept&nbsp;]</h3><p>Une boucle piétonne d’environ 1.7 km, par les ponts de Sous-Terre et de la Coulouvrenière et la passerelle du barrage du Seujet, qui relie les six zones du festival.</p></div>
+      <div class="block rv"><h3>[&nbsp;Le parcours&nbsp;]</h3><p>Food trucks et bars tout le long du quai du Seujet, la terrasse de L’Usine face au Rhône et le marché des créateurs avec un DJ place des Volontaires, en accès libre.</p></div>
+      <div class="block free rv"><h3>[&nbsp;En plein air · gratuit&nbsp;]</h3><p>Deux scènes, du vendredi au dimanche de 16h à 20h30 : l’Esplanade, au pied du pont de Sous-Terre, et la scène hip-hop au barrage du Seujet. Et une zone jeunes à la Buvette Urban : jeux, ateliers, DJ et transats.</p></div>
+      <div class="block rv"><h3>[&nbsp;En salle&nbsp;]</h3><p>Le Rez / Le Zoo à L’Usine le vendredi et le Palladium le samedi, jusqu’à 6h : têtes d’affiche, DJ et showcases. Le dimanche, jam session au Groove. À prix accessibles.</p></div>
     </div>
     <div class="map-row rv">
-      <img src="images/carte-parcours.jpg" alt="Croquis de la carte du festival, de la Pointe de la Jonction au pont de la Coulouvrenière">
+      <img src="images/plan-festival.jpg" alt="Plan du festival sur les berges du Rhône, du pont de Sous-Terre au pont de la Coulouvrenière : parcours, scènes et zones numérotées" loading="lazy">
       <div>
         <p class="script">une fête populaire au bord de l’eau</p>
-        <p class="lede" style="margin-top:16px">De la Pointe de la Jonction au pont de la Coulouvrenière, le festival se vit à pied, d’une scène à l’autre, en longeant l’eau, sur une voie fermée à la circulation.</p>
+        <p class="lede" style="margin-top:16px">Du pont de Sous-Terre au pont de la Coulouvrenière, sur les deux rives, le festival se vit à pied, d’une scène à l’autre, en longeant l’eau, sur des quais fermés à la circulation. Le Groove, à quelques minutes à pied, accueille la jam session du dimanche.</p>
       </div>
     </div>
   </div>
@@ -354,9 +357,9 @@ footer img{height:26px;width:auto}
   <div class="wrap esprit-mid">
     <p class="script">l’esprit</p>
     <p class="esprit-big">Le nouveau rendez-vous culturel de la jeunesse romande</p>
-    <p class="lede">Une ville entière qui se retrouve le long du Rhône : on vient pour un concert gratuit en fin d’après-midi, on reste pour la scène humour et danse, on mange au bord de l’eau et on finit la nuit en salle.</p>
+    <p class="lede">Une ville entière qui se retrouve le long du Rhône : on vient pour un concert gratuit en fin d’après-midi, on flâne au marché des créateurs, on mange au bord de l’eau et on finit la nuit en salle.</p>
   </div>
-  <p class="slide s2" aria-hidden="true">Concerts ✶ Clubbing ✶ Danse ✶ Foot ✶ Humour ✶ Concerts ✶ Clubbing ✶ Danse ✶</p>
+  <p class="slide s2" aria-hidden="true">Concerts ✶ Clubbing ✶ Marché ✶ DJ sets ✶ Jam session ✶ Concerts ✶ Clubbing ✶ Marché ✶</p>
 </section>
 
 <section class="band ink" id="heritage">
