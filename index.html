@@ -114,6 +114,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .plan .pl-lab{font-weight:700;font-size:26px;fill:var(--ink);text-transform:uppercase;letter-spacing:.05em}
 .plan .pl-river{font-family:var(--script);font-size:70px;fill:var(--ink)}
 .plan .pl-pin text{font-weight:800;font-size:32px;fill:#fff;text-anchor:middle;stroke:none}
+.plan .pl-street text{font-size:22px;font-style:italic;fill:#8a9085;stroke:none}
+.plan .pl-n{font-weight:800;font-size:20px;fill:var(--ink);stroke:none}
 .map-row .lede{max-width:70ch}
 .map-row .script{font-size:clamp(44px,5.5vw,80px)}
 @media (max-width:960px){.blocks{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -357,12 +359,27 @@ footer img{height:26px;width:auto}
           </pattern>
         </defs>
         <rect width="2000" height="1000" fill="#e8eee3"/>
-        <g fill="none" stroke="#cfd5ca" stroke-width="16" stroke-linecap="round">
-          <path d="M0 440 C 220 360, 420 260, 560 170 S 760 30, 820 0"/>
-          <path d="M1965 0 L1965 1000"/>
-          <path d="M1060 660 L1965 610"/>
-          <path d="M1250 660 L1250 1000"/>
-          <path d="M700 1000 L900 780"/>
+        <g fill="#d9ded4">
+          <path d="M300 300 L520 190 L560 260 L360 380 Z"/><path d="M90 420 L280 330 L320 400 L150 500 Z"/>
+          <path d="M620 120 L760 40 L800 110 L680 190 Z"/><path d="M1000 0 L1180 0 L1150 30 L1010 50 Z"/>
+          <path d="M965 478 L1140 470 L1150 575 L990 585 Z"/>
+          <path d="M1290 460 L1650 455 L1655 570 L1290 585 Z"/><path d="M1700 455 L1880 455 L1885 560 L1700 565 Z"/>
+          <path d="M760 660 L1010 625 L1020 720 L800 760 Z"/><path d="M1080 690 L1230 680 L1235 800 L1090 810 Z"/>
+          <path d="M1290 680 L1620 665 L1625 760 L1295 775 Z"/><path d="M1680 660 L1900 650 L1905 760 L1685 770 Z"/>
+          <path d="M1290 820 L1600 805 L1605 990 L1300 1000 Z"/><path d="M1660 810 L1900 800 L1905 1000 L1665 1000 Z"/>
+          <path d="M820 820 L1210 845 L1215 1000 L760 1000 Z"/><path d="M380 930 L640 860 L700 1000 L420 1000 Z"/>
+          <path d="M1320 0 L1600 0 L1600 20 L1320 20 Z"/>
+        </g>
+        <g fill="none" stroke="#c4cabf" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke-width="22" d="M0 455 C 220 375, 420 275, 560 185 S 760 40, 820 0"/>
+          <path stroke-width="14" d="M150 640 L420 548 L620 440 L770 338 L860 245 L990 130 L1200 30 L1250 0"/>
+          <path stroke-width="14" d="M95 915 L270 895 L530 780 L740 672 L900 640 L1060 640 L1960 600"/>
+          <path stroke-width="18" d="M1950 0 L1965 1000"/>
+          <path stroke-width="14" d="M1060 800 L1960 780"/>
+          <path stroke-width="12" d="M1260 600 L1265 1000"/>
+          <path stroke-width="12" d="M1660 600 L1665 1000"/>
+          <path stroke-width="12" d="M640 840 L760 1000"/>
+          <path stroke-width="10" d="M0 980 L380 925"/>
         </g>
         <g fill="url(#pl-hatch)" stroke="#f4431c" stroke-width="4" stroke-linejoin="round">
           <path d="M0 720 L125 690 L300 640 L480 560 L640 470 L760 390 L850 300 L910 230 L980 165 L1080 105 L1220 72 L1420 62 L1650 78 L1890 98 L1890 228 L1560 232 L1150 300 L1150 440 L1000 460 L940 470 L900 540 L800 600 L700 640 L560 700 L420 770 L260 850 L120 880 L0 905 Z"/>
@@ -372,6 +389,22 @@ footer img{height:26px;width:auto}
         <g stroke="#0e0e0e" stroke-width="22">
           <line x1="160" y1="660" x2="70" y2="895"/>
           <line x1="1905" y1="80" x2="1910" y2="460"/>
+        </g>
+        <path d="M840 296 L930 466" stroke="#9aa094" stroke-width="16" stroke-linecap="round"/>
+        <rect x="1172" y="478" width="44" height="44" fill="#e8eee3" stroke="#9aa094" stroke-width="3" stroke-dasharray="6 6"/>
+        <g fill="#f4431c">
+          <rect x="345" y="596" width="16" height="16" transform="rotate(-25 353 604)"/><rect x="415" y="565" width="16" height="16" transform="rotate(-28 423 573)"/>
+          <rect x="490" y="527" width="16" height="16" transform="rotate(-30 498 535)"/><rect x="640" y="440" width="16" height="16" transform="rotate(-35 648 448)"/>
+          <rect x="705" y="395" width="16" height="16" transform="rotate(-38 713 403)"/>
+        </g>
+        <g class="pl-street">
+          <text x="330" y="430" transform="rotate(-27 330 430)">Quai du Seujet</text>
+          <text x="300" y="935" transform="rotate(-24 300 935)">Quai du Rhône</text>
+        </g>
+        <g transform="translate(1835 870)">
+          <circle r="44" fill="#e8eee3" stroke="#0e0e0e" stroke-width="3"/>
+          <path d="M0 -32 L14 10 L0 2 L-14 10 Z" fill="#0e0e0e"/>
+          <text class="pl-n" x="0" y="34" text-anchor="middle">N</text>
         </g>
         <g fill="none" stroke="#0e0e0e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 16">
           <path d="M75 888 L165 662 L300 672 L450 585 L620 485 L760 380 L840 285 L930 185 L1050 105 L1220 55 L1500 58 L1885 100 L1915 110 L1915 295 L1665 298 L1665 440 L1265 448 L1215 495 L1180 495 L1150 465 L985 465 L955 480 L975 575 L1020 585 L900 600 L730 640 L520 745 L260 870 L75 888"/>
